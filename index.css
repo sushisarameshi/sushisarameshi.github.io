@@ -46,7 +46,7 @@ li {
 
 .main {
 	height: 700px;
-	background-image: url(img/ajisai.jpg);
+	background-image: url("https://sushisarameshi.github.io/img/ajisai.jpg");
 	background-size: cover;
 	position:relative;
 	z-index: 0;
