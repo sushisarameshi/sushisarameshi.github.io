@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Yu Gothic',sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  	text-decoration: none;
+    color: #2cbebc;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(36, 47, 47, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+main{
+  overflow: hidden;
+}
+
+.container{
+  font-size: 20px;
+}
+
+.logo-a{
+  width: 206px;
+  vertical-align: bottom;
+}
+
+.header-left{
+  float: left;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 13px;
+  display: none;
+}
+
+#blank {
+  display: block;
+  margin: 0 0 100px 0;
+}
+
+.top-wrapper{
+  color: #2cbebc;
+  text-align: center;
+}
+
+.top-wrapper h2 {
+  margin: 100px 0 50px 0;
+  animation-name: anime2;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+
+.top-wrapper h1{
+  margin: 150px 0;
+  animation-name: anime2;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+
+@keyframes anime2 {
+  0% {
+    opacity: 0;
+    letter-spacing: 0;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 20px;
+    margin-right: -20px
+  }
+}
+
+.item1 {
+  padding: 0px 0;
+}
+
+.item1 p{
+  animation-name: anime3;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards;
+}
+
+.item-wrapper{
+  padding-bottom: 100px;
+}
+
+@keyframes anime3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.background-move{
+  margin : 0 auto 40px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* 今の私では無理 */
+
+/* #slanting01{ */
+  /* width: 10px;
+  height: 80px;
+  background: #2cbebc;
+  margin: 0 auto;
+  text-align: center;
+  transform: skew(-40deg, 0deg);
+  z-index: -5;
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  animation: move 20s linear infinite;
+} */
+/* @keyframes move {
+  0%{
+    transform: translate();
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    overflow: hidden;
+  }
+  100%{
+    transform: translate();
+    position: absolute;
+    top: 100px;
+    left: 100%;
+    overflow: hidden;
+  }
+} */
+
+.contents-wrapper{
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contents{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content{
+  vertical-align: bottom;
+  font-size: 20px;
+  line-height: 30px;
+  flex: auto;
+  text-align: center;
+  width: 250px;
+  margin: 50px 0;
+	transition: 0.3s;
+  position: relative;
+}
+
+.content-icon {
+  color: #2cbebc;
+  font-size: 200px;
+}
+
+.text-content{
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.contents-wrapper .content:hover {
+	transform: translate3d(0px, -10px ,0);
+  background-color: #ddfff8;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.contents-wrapper .content:hover .content-icon  {
+  color: rgba(0, 163, 171, 1);
+}
+
+footer{
+  background-color: #242f2f;
+  font-size: 0;
+  text-align: center;
+}
+
+.logo-b{
+  width: 300px;
+  height: auto;
+  margin-bottom: 0;
+  vertical-align: bottom;
+  margin: auto;
+}
